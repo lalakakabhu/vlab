@@ -6,8 +6,8 @@ import numpy as np
 
 
 # Data Viz Pkg
-import matplotlib.pyplot as plt 
 import matplotlib
+import matplotlib.pyplot as plt 
 matplotlib.use("Agg")
 import seaborn as sns 
 
