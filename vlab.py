@@ -15,8 +15,8 @@ with st.echo(code_location='below'):
         curr_turn, i = divmod(curr_point_num, points_per_turn)
         angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
         radius = curr_point_num / total_points
-        x = radius * math.cos(angle)
-        y = radius * math.sin(angle)
+        x = total_points
+        y = num_turns
         data.append(Point(x, y))
         
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
